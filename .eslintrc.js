@@ -2,9 +2,12 @@ module.exports = {
   extends: [
     '@mate-academy/eslint-config-react-typescript',
     'plugin:react/recommended',
+    "plugin:react/jsx-runtime",
   ],
   rules: {
     // React
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".tsx", ".ts"] }],
     'react/prop-types': 0,
     'react/self-closing-comp': 0,
     'react/display-name': 0,
